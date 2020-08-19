@@ -1,0 +1,41 @@
+{
+  "name": "bizyaz",
+  "version": "1.0.0",
+  "description": "Social Network",
+  "author": "Kamran Ibrahimov",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --watch api --exec \"nuxt\"",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^5.0.1",
+    "@nuxtjs/axios": "^5.3.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^5.2.0",
+    "connect": "^3.7.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.3",
+    "express-validator": "^6.6.0",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.0",
+    "nodemon": "^2.0.4",
+    "nuxt": "^2.0.0",
+    "vue-fragment": "^1.5.1"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "vue-jest": "^4.0.0-0"
+  }
+}

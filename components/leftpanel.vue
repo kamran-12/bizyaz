@@ -1,0 +1,63 @@
+<template>
+  <fragment>
+    <Header v-if="desktop" />
+    <div v-if="desktop" class="forms">
+      <Login v-if="login" @changeform="changeform" />
+      <Signup v-if="!login" @changeform="changeform" />
+    </div>
+    <slot />
+  </fragment>
+</template>
+
+<script>
+import Login from "./login";
+import Signup from "./signup";
+import Header from "./header";
+export default {
+  name: "LeftPanel",
+  components: { Login, Signup, Header },
+  props: ["desktop"],
+  data() {
+    return {
+      login: true,
+    };
+  },
+  methods: {
+    changeform() {
+      this.login = !this.login;
+    },
+  },
+};
+</script>
+
+<style scoped>
+div.forms {
+  background: rgb(204, 204, 204);
+  flex-grow: 1;
+  width: 100%;
+}
+div.forms >>> form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.forms >>> .inputwithlabel {
+  display: inline-block;
+  padding: 8px;
+  font-size: 16px;
+}
+div.forms >>> .input {
+  font-size: 16px;
+  padding: 4px;
+}
+div.forms >>> .label {
+  margin: 8px 0;
+}
+div.forms >>> .suggestion {
+  margin: 6px;
+}
+div.forms >>> .suggestion a {
+  color: blue;
+  cursor: pointer;
+}
+</style>

@@ -12,7 +12,7 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_axios_2f994316 from 'nuxt_plugin_axios_2f994316' // Source: ./axios.js (mode: 'all')
+import nuxt_plugin_axios_4ec0a222 from 'nuxt_plugin_axios_4ec0a222' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_datefilter_f4b26092 from 'nuxt_plugin_datefilter_f4b26092' // Source: ../plugins/date-filter.js (mode: 'all')
 import nuxt_plugin_vuefragment_084cf1ae from 'nuxt_plugin_vuefragment_084cf1ae' // Source: ../plugins/vue-fragment.js (mode: 'all')
 import nuxt_plugin_global_c4edad06 from 'nuxt_plugin_global_c4edad06' // Source: ../plugins/global.js (mode: 'all')
@@ -191,8 +191,8 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_axios_2f994316 === 'function') {
-    await nuxt_plugin_axios_2f994316(app.context, inject)
+  if (typeof nuxt_plugin_axios_4ec0a222 === 'function') {
+    await nuxt_plugin_axios_4ec0a222(app.context, inject)
   }
 
   if (typeof nuxt_plugin_datefilter_f4b26092 === 'function') {

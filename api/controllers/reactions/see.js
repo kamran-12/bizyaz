@@ -9,12 +9,16 @@ const handler = async function (req, res) {
         if (errors.length > 0) {
             return res.status(422).json({ errors: errors });
         }
-        let { kind, postId } = req.body
+        let { kind, likedId } = req.body
         switch (kind) {
             case 'postLikeCount':
-                let post = await Post.findById(postId)
+                let post = await Post.findById(likedId)
                 if (!post) return res.status(404).send("Post not found.")
                 res.status(200).send(post.likesCount)
+                break
+            case "mrft": //my reaction for this
+                let reaction = await Reaction.find({ maker: req.userId, for: likedId })
+                res.status(200).send(reaction)
                 break
             //other cases needed
             default:

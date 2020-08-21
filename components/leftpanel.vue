@@ -6,6 +6,7 @@
       <Signup v-if="!login" @changeform="changeform" />
     </div>
     <slot />
+    <Linker :text="text" />
   </fragment>
 </template>
 
@@ -20,6 +21,7 @@ export default {
   data() {
     return {
       login: true,
+      text: "haha nokia.com m.facebook.com www.azel.net kkkkkk@gmail.com http://www.t.me https://www.t.me <script>alert('ejifnef')<\/script>"
     };
   },
   methods: {

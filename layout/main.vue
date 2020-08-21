@@ -12,13 +12,13 @@
       </transition>-->
       <div class="persistentleft desktop">
         <LeftPanel :desktop="true">
-          <slot></slot>
+          <slot name="sidebar"></slot>
         </LeftPanel>
       </div>
       <div class="main">
         <Header :empty="true" class="desktop"/>
         <Header :empty="false" class="mobile" />
-        <slot></slot>
+        <slot name="main"></slot>
       </div>
     </div>
   </div>

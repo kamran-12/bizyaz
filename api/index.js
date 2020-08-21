@@ -10,6 +10,6 @@ r('./middleware/multer-image').multer, r('./middleware/auth'), r('./controllers/
 
 r('mongoose').connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, autoIndex: false })
     .then(() => { console.log(`backend listening`) })
-    .catch((error) => { console.log(`[DB CONNECTION FAIL] ${error}`) })
+    .catch((error) => { console.log(`[DB ${MONGO_DEFAULT_DATABASE} CONNECTION FAIL] ${error}`) })
 
 module.exports = { path: "/api/", handler: app };

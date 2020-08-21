@@ -2,15 +2,13 @@
   {
     "name": "test_api",
     "path": "/test_api",
-    "component": "/Users/vefaibrahimova/Downloads/dev/bizyaz_combined/pages/test_api.vue",
-    "chunkName": "pages/test_api",
-    "_name": "_ec6e81b2"
+    "component": "/Users/vefaibrahimova/Downloads/dev/bizyaz/pages/test_api.vue",
+    "chunkName": "pages/test_api"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/vefaibrahimova/Downloads/dev/bizyaz_combined/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_84a4a0f0"
+    "component": "/Users/vefaibrahimova/Downloads/dev/bizyaz/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]

@@ -6,7 +6,8 @@
       <Signup v-if="!login" @changeform="changeform" />
     </div>
     <slot />
-    <Linker :text="text" />
+    <Like fill="red" />
+    <span v-html="linker(text)" />
   </fragment>
 </template>
 
@@ -14,9 +15,11 @@
 import Login from "./login";
 import Signup from "./signup";
 import Header from "./header";
+import linker from "../api/util/linker"
+import Like from "./like";
 export default {
   name: "LeftPanel",
-  components: { Login, Signup, Header },
+  components: { Like, Login, Signup, Header },
   props: ["desktop"],
   data() {
     return {
@@ -28,6 +31,7 @@ export default {
     changeform() {
       this.login = !this.login;
     },
+    linker
   },
 };
 </script>

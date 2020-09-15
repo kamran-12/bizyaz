@@ -1,6 +1,5 @@
 
 export default {
-  mode: 'universal',
   head: {
     title: process.env.npm_package_name || '',
     meta: [

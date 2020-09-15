@@ -1,14 +1,58 @@
 [
   {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/vefaibrahimova/Downloads/bizyaz/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_419d2f59"
+  },
+  {
+    "name": "new-post",
+    "path": "/new-post",
+    "component": "/Users/vefaibrahimova/Downloads/bizyaz/pages/new-post.vue",
+    "chunkName": "pages/new-post",
+    "_name": "_e2846026"
+  },
+  {
+    "name": "signup",
+    "path": "/signup",
+    "component": "/Users/vefaibrahimova/Downloads/bizyaz/pages/signup.vue",
+    "chunkName": "pages/signup",
+    "_name": "_3e62a8d8"
+  },
+  {
     "name": "test_api",
     "path": "/test_api",
-    "component": "/Users/vefaibrahimova/Downloads/dev/bizyaz/pages/test_api.vue",
-    "chunkName": "pages/test_api"
+    "component": "/Users/vefaibrahimova/Downloads/bizyaz/pages/test_api.vue",
+    "chunkName": "pages/test_api",
+    "_name": "_3a77f02d"
+  },
+  {
+    "name": "community-url",
+    "path": "/community/:url?",
+    "component": "/Users/vefaibrahimova/Downloads/bizyaz/pages/community/_url.vue",
+    "chunkName": "pages/community/_url",
+    "_name": "_1596ffd6"
+  },
+  {
+    "name": "post-id",
+    "path": "/post/:id?",
+    "component": "/Users/vefaibrahimova/Downloads/bizyaz/pages/post/_id.vue",
+    "chunkName": "pages/post/_id",
+    "_name": "_0739d7ea"
+  },
+  {
+    "name": "user-username",
+    "path": "/user/:username?",
+    "component": "/Users/vefaibrahimova/Downloads/bizyaz/pages/user/_username.vue",
+    "chunkName": "pages/user/_username",
+    "_name": "_e465379e"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/vefaibrahimova/Downloads/dev/bizyaz/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/vefaibrahimova/Downloads/bizyaz/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_77f58c42"
   }
 ]

@@ -23,7 +23,7 @@
     <ExternalLink :link="data.content" v-if="data.kind=`link`" />
     <PostText :text="data.content" v-if="data.kind=`text`&&data.content.trim().length" />
     <PostInteraction :postId="data._id" />
-    <Comments v-if="view.comments" :post="data._id" :limit="limit" />
+    <Comments v-if="view.comments" :postId="data._id" :limit="limit" />
   </div>
 </template>
 
